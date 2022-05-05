@@ -70,8 +70,6 @@ Running the program again using 3 clusters I got the following results
 {: refdef}
 
 
-
-
 The following provides a visualization on the Death Percentage by Asthma for the Bay Area by County
 
 <iframe src="Maps/DP.html" height="500" width="800"></iframe>
