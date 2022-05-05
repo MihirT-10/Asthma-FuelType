@@ -44,7 +44,7 @@ I then used a groupby method to find the number of Deaths in each county
     def CountyMapper(df):
     CountyZipped = []
     for zipcode in df['ZipCode']:
-      a = [k for k, v in CZ_Dict.items() if zipcode in v]
+      a = [k for k, v in CZ_Dict.items() if zipcode in v] #CZ_Dict is the dictionary of county keys and zipcode items
       CountyZipped.append(a)
     df['CountyZipped'] = CountyZipped
     df['CountyZipped'] = df['CountyZipped'].str[0]
