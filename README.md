@@ -15,6 +15,11 @@ Here is an example of the cleaned FuelType Dataset according to the zipcode
 
 <img src="Images/CleanFuel.png" alt="Image description">
 
+By creating a dictionary of zipcodes for each County I was able to map each zipcode to the 9 counties of the Bay Area.
+I then used a groupby method to find the number of
+
+<img src="Images/AnalysisFrame.png" alt="Image description">
+
 
 <img src="Images/FinalFrame.png" alt="Image description">
 {:style="display:block; margin-left:auto; margin-right:auto"; :height="75%" width="75%"; }
@@ -25,7 +30,7 @@ Here is an example of the cleaned FuelType Dataset according to the zipcode
 <iframe src="Maps/DP.html" height="500" width="500"></iframe>
 
 
-<iframe src="AV.html" height="500" width="500"></iframe>
+<iframe src="Maps/AV.html" height="500" width="500"></iframe>
 
 
-<iframe src="AC.html" height="500" width="500"></iframe>
+<iframe src="Maps/AC.html" height="500" width="500"></iframe>
