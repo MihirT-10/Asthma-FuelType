@@ -10,6 +10,24 @@ First off I cleaned the 2 Datasets.
 
 ### Cleaned Asthma Dataset according to the counties
 
+### Functions
+
+- CountyMapper: Maps Each ZipCode in Fuel DataSet to its corresponding County
+  - ```python
+    def CountyMapper(df):
+    CountZipped = []
+    for zipcode in df['ZipCode']:
+      a = [k for k, v in CZ_Dict.items() if zipcode in v]
+      CountyZipped.append(a)
+    df['CountyZipped'] = CountyZipped
+    df['CountyZipped'] = df['CountyZipped'].str[0]
+    return df
+    ```
+- CarCounter: Counts the cars in each County
+- CarTypeCounter: Decided to make the distinction of any combustion engine even if hybrid
+  - Combustion = Gasoline, Diesel, Diesel Hybrid, Hybrid Gasoline, Flex-Fuel, Natural Gas, Other
+  - Alternative = Battery Electric, Plug-In Hybrid, Hydrogen Fuel Cell
+
 <img src="Images/image_2022-05-04_193008617.png" alt="Image description">
 {:style="display:block; margin-left:auto; margin-right:auto"; :height="75%" width="75%"; }
 {:refdef: style="text-align: center;"}
@@ -50,6 +68,7 @@ This will be the Final Dataframe on which the K-Means Analysis will be conducted
 
 ### PairWise Plots
 Some preliminary analysis included a PairWise Plot for the corresponding attributes developed above.
+This is a Matrix of scatterplots meant to display correlations between attributes
 
 <img src="Images/PWP.png" alt="Image description">
 {:style="display:block; margin-left:auto; margin-right:auto"; :height="75%" width="75%"; }
@@ -77,6 +96,12 @@ Running the program again using 3 clusters I got the following results
 {:refdef: style="text-align: center;"}
 *Inertia Score = 3 K-Means Analysis*
 {: refdef}
+
+### K-Means Conclusion
+My final results were contrary to my a priori expectations that alternative fuel vehicles would lend to a decreased number of asthma related deaths. This data shows
+that a lower combustion vehicle presence and higher alternative presence led to a greater % death rate. This can be attributed to simply there being more cars in
+these areas. Although the results were not too fruitful it will be interesting to see how this study will fare 15-30 years down the line after California bans 
+the manufacturing of combustion fuel vehicles in 2025.
 
 ## Choropleth Maps
 
