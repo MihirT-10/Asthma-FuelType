@@ -82,6 +82,6 @@ The following provides a visualization on the ratio between Alternative Fuel Veh
 <iframe src="Maps/AC.html" height="500" width="800"></iframe>
 
 The following provides a visualization on the number of Alternative Fuel Vehicles for the Bay Area by County
-(Note how the Santa Clara has the greatest value most likely attributed to its suburban high income environment)
+(Note how Santa Clara has the greatest value most likely attributed to its suburban high income environment)
 
 <iframe src="Maps/AV.html" height="500" width="800"></iframe>
