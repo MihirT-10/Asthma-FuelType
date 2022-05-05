@@ -111,7 +111,7 @@ Running the program again using 3 clusters I got the following results
 *Inertia Score = 3 K-Means Analysis*
 {: refdef}
 
-### K-Means Conclusion
+## K-Means Conclusion
 ```diff
 My final results were contrary to my a priori expectations that alternative fuel vehicles would lend to a decreased number of asthma related deaths. This data shows
 that a lower combustion vehicle presence and higher alternative presence led to a greater % death rate. This can be attributed to simply there being more cars in
