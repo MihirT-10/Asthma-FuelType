@@ -41,6 +41,36 @@ The Final results ultimately cleaned the code to analyze only the 9 Bay Area cou
 *Final Frame*
 {: refdef}
 
+Some preliminary analysis included a PairWise Plot for the corresponding attributes developed above.
+
+<img src="Images/PWP.png" alt="Image description">
+{:style="display:block; margin-left:auto; margin-right:auto"; :height="75%" width="75%"; }
+{:refdef: style="text-align: center;"}
+*Pair Wise Plots*
+{: refdef}
+
+After designing the Final Frame I conducted a K-Means Clustering Analysis using 9 clusters for the 9 Counties.
+
+<img src="Images/Run9.png" alt="Image description">
+{:style="display:block; margin-left:auto; margin-right:auto"; :height="75%" width="75%"; }
+{:refdef: style="text-align: center;"}
+*9 Cluster K-Means Analysis*
+{: refdef}
+
+Inertia Score determined 3 clusters was the optimal cluster coefficient => 3 triplets of counties were aggregated together based on their similarity.
+
+
+
+Running the program again using 3 clusters I got the following results
+
+<img src="Images/Run3.png" alt="Image description">
+{:style="display:block; margin-left:auto; margin-right:auto"; :height="75%" width="75%"; }
+{:refdef: style="text-align: center;"}
+*Inertia Score = 3 K-Means Analysis*
+{: refdef}
+
+
+
 
 
 <iframe src="Maps/DP.html" height="500" width="500"></iframe>
