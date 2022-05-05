@@ -10,24 +10,6 @@ First off I cleaned the 2 Datasets.
 
 ### Cleaned Asthma Dataset according to the counties
 
-### Functions
-
-- CountyMapper: Maps Each ZipCode in Fuel DataSet to its corresponding County
-  - ```python
-    def CountyMapper(df):
-    CountZipped = []
-    for zipcode in df['ZipCode']:
-      a = [k for k, v in CZ_Dict.items() if zipcode in v]
-      CountyZipped.append(a)
-    df['CountyZipped'] = CountyZipped
-    df['CountyZipped'] = df['CountyZipped'].str[0]
-    return df
-    ```
-- CarCounter: Counts the cars in each County
-- CarTypeCounter: Decided to make the distinction of any combustion engine even if hybrid
-  - Combustion = Gasoline, Diesel, Diesel Hybrid, Hybrid Gasoline, Flex-Fuel, Natural Gas, Other
-  - Alternative = Battery Electric, Plug-In Hybrid, Hydrogen Fuel Cell
-
 <img src="Images/image_2022-05-04_193008617.png" alt="Image description">
 {:style="display:block; margin-left:auto; margin-right:auto"; :height="75%" width="75%"; }
 {:refdef: style="text-align: center;"}
@@ -43,6 +25,7 @@ First off I cleaned the 2 Datasets.
 *Fuel Type Frame*
 {: refdef}
 
+
 ### Number of Deaths/County
 By creating a dictionary of zipcodes for each County I was able to map each zipcode to the 9 counties of the Bay Area.
 I then used a groupby method to find the number of Deaths in each county
@@ -52,6 +35,37 @@ I then used a groupby method to find the number of Deaths in each county
 {:refdef: style="text-align: center;"}
 *Death GroupBy Frame*
 {: refdef}
+
+
+### Functions
+
+- CountyMapper: Maps Each ZipCode in Fuel DataSet to its corresponding County
+  - ```python
+    def CountyMapper(df):
+    CountyZipped = []
+    for zipcode in df['ZipCode']:
+      a = [k for k, v in CZ_Dict.items() if zipcode in v]
+      CountyZipped.append(a)
+    df['CountyZipped'] = CountyZipped
+    df['CountyZipped'] = df['CountyZipped'].str[0]
+    return df
+    ```
+   - <img src="Images/CountyMapper.png" alt="Image description">
+
+- CarCounter: Counts the cars in each County
+- CarTypeCounter: Decided to make the distinction of any combustion engine even if hybrid
+  - Combustion = Gasoline, Diesel, Diesel Hybrid, Hybrid Gasoline, Flex-Fuel, Natural Gas, Other
+  - Alternative = Battery Electric, Plug-In Hybrid, Hydrogen Fuel Cell
+  - ```python
+    def CarTypeCounter(df):
+      VehTypeCounts = df.groupby(['CountyZipped,'Fuel Type']).Vehicles.sum().reset_index()
+      VehicleCounts = VehTypeCounts['Vehicle'].to_numpy()
+      Alts = VehicleCounts[::2]
+      Combs = VehicleCounts[1::2]
+      print(VehTypeCounts)
+      return Alts,Combs
+    ```
+  - <img src="Images/CarType.png" alt="Image description">
 
 
 ### Final Frame Bay Area 
