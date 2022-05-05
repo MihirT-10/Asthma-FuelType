@@ -50,7 +50,7 @@ I then used a groupby method to find the number of Deaths in each county
     df['CountyZipped'] = df['CountyZipped'].str[0]
     return df
     ```
-   - <img src="Images/CountyMapper.png" alt="Image description">
+   <img src="Images/CountyMapper.png" alt="Image description">
 
 - CarCounter: Counts the cars in each County
 - CarTypeCounter: Decided to make the distinction of any combustion engine even if hybrid
@@ -65,7 +65,7 @@ I then used a groupby method to find the number of Deaths in each county
       print(VehTypeCounts)
       return Alts,Combs
     ```
-  - <img src="Images/CarType.png" alt="Image description">
+   <img src="Images/CarType.png" alt="Image description">
 
 
 ### Final Frame Bay Area 
@@ -114,9 +114,9 @@ Running the program again using 3 clusters I got the following results
 ### K-Means Conclusion
 ```diff
 + My final results were contrary to my a priori expectations that alternative fuel vehicles would lend to a decreased number of asthma related deaths. This data shows
-+ that a lower combustion vehicle presence and higher alternative presence led to a greater % death rate. This can be attributed to simply there being more cars in
-+ these areas. Although the results were not too fruitful it will be interesting to see how this study will fare 15-30 years down the line after California bans 
-+ the manufacturing of combustion fuel vehicles in 2025.
+that a lower combustion vehicle presence and higher alternative presence led to a greater % death rate. This can be attributed to simply there being more cars in
+these areas. Although the results were not too fruitful it will be interesting to see how this study will fare 15-30 years down the line after California bans 
+the manufacturing of combustion fuel vehicles in 2025.
 ```
 
 ## Choropleth Maps
