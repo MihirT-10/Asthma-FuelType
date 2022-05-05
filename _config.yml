@@ -1,1 +1,21 @@
 theme: jekyll-theme-slate
+
+title: Max Gardner
+description: K-Means Analysis of Asthma and Fuel Type
+github_username: MihirT-10
+
+# Email and twitter are optional:
+email: mihir_thakar@berkeley.edu
+
+titles_from_headings:
+  enabled:     false
+  strip_title: true
+  collections: true
+  
+markdown: kramdown
+kramdown:
+  math_engine: katex
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  syntax_highlighter: rouge
