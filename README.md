@@ -7,7 +7,7 @@ This Project is going to correlate Vehicle and Health data from 9 counties that 
 ![](Images/FinalFrame.jpg "Final Frame")
 {:style="display:block; margin-left:auto; margin-right:auto"; :height="75%" width="75%"; }
 {:refdef: style="text-align: center;"}
-*Regression Discontinuity*
+*Final Frame*
 {: refdef}
 
 <iframe src="Maps/DP.html" height="500" width="500"></iframe>
