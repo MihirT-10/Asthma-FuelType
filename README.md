@@ -57,7 +57,7 @@ After designing the Final Frame I conducted a K-Means Clustering Analysis using 
 *9 Cluster K-Means Analysis*
 {: refdef}
 
-Inertia Score determined 3 clusters was the optimal cluster coefficient => 3 triplets of counties were aggregated together based on their similarity.
+The elbow of the Inertia Score determined 3 clusters was the optimal cluster coefficient => 3 triplets of counties were aggregated together based on their similarity.
 
 
 
@@ -74,15 +74,14 @@ Running the program again using 3 clusters I got the following results
 
 The following provides a visualization on the Death Percentage by Asthma for the Bay Area by County
 
-<iframe src="Maps/DP.html" height="500" width="500"></iframe>
+<iframe src="Maps/DP.html" height="500" width="800"></iframe>
 
 
 The following provides a visualization on the ratio between Alternative Fuel Vehicles over Combustion for the Bay Area by County
 
-<iframe src="Maps/AV.html" height="500" width="500"></iframe>
+<iframe src="Maps/AC.html" height="500" width="800"></iframe>
 
 The following provides a visualization on the number of Alternative Fuel Vehicles for the Bay Area by County
 (Note how the Santa Clara has the greatest value most likely attributed to its suburban high income environment)
 
-
-<iframe src="Maps/AC.html" height="500" width="500"></iframe>
+<iframe src="Maps/AV.html" height="500" width="800"></iframe>
