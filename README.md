@@ -95,7 +95,7 @@ This is a Matrix of scatterplots meant to display correlations between attribute
 <img src="Images/Cluster Slide.png" alt="Image description">
 {:style="display:block; margin-left:auto; margin-right:auto"; :height="75%" width="75%"; }
 {:refdef: style="text-align: center;"}
-*9 Cluster K-Means Analysis*
+*K-Means Explanation*
 {: refdef}
 
 
