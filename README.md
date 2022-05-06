@@ -90,6 +90,15 @@ This is a Matrix of scatterplots meant to display correlations between attribute
 *Pair Wise Plots*
 {: refdef}
 
+### K-Means Overview
+
+<img src="Images/Cluster Slide.png" alt="Image description">
+{:style="display:block; margin-left:auto; margin-right:auto"; :height="75%" width="75%"; }
+{:refdef: style="text-align: center;"}
+*9 Cluster K-Means Analysis*
+{: refdef}
+
+
 ### K-Means Analysis 9 Clusters
 After designing the Final Frame I conducted a K-Means Clustering Analysis using 9 clusters for the 9 Counties.
 
