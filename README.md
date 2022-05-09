@@ -58,7 +58,7 @@ I then used a groupby method to find the number of Deaths in each county
   - Alternative = Battery Electric, Plug-In Hybrid, Hydrogen Fuel Cell
   - ```python
     def CarTypeCounter(df):
-      VehTypeCounts = df.groupby(['CountyZipped,'Fuel Type']).Vehicles.sum().reset_index()
+      VehTypeCounts = df.groupby(['CountyZipped','Fuel Type']).Vehicles.sum().reset_index()
       VehicleCounts = VehTypeCounts['Vehicle'].to_numpy()
       Alts = VehicleCounts[::2]
       Combs = VehicleCounts[1::2]
