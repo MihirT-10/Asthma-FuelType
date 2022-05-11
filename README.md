@@ -134,8 +134,6 @@ the manufacturing of combustion fuel vehicles in 2025.
 The following provides a visualization on the Death Percentage by Asthma for the Bay Area by County
 
 <iframe src="Maps/DP.html" height="500" width="800"></iframe>
-{:style="display:block; margin-left:auto; margin-right:auto"; :height="75%" width="75%"; }
-{:refdef: style="text-align: center;"}
 *Bay Area Death Percentage*
 {: refdef}
 
@@ -143,8 +141,6 @@ The following provides a visualization on the Death Percentage by Asthma for the
 The following provides a visualization on the ratio between Alternative Fuel Vehicles over Combustion for the Bay Area by County
 
 <iframe src="Maps/AC.html" height="500" width="800"></iframe>
-{:style="display:block; margin-left:auto; margin-right:auto"; :height="75%" width="75%"; }
-{:refdef: style="text-align: center;"}
 *Bay Area Alternative Fuel Ratio Relationship*
 {: refdef}
 
@@ -153,7 +149,5 @@ The following provides a visualization on the number of Alternative Fuel Vehicle
 (Note how Santa Clara has the greatest value this can be attributed to its suburban high income environment)
 
 <iframe src="Maps/AV.html" height="500" width="800"></iframe>
-{:style="display:block; margin-left:auto; margin-right:auto"; :height="75%" width="75%"; }
-{:refdef: style="text-align: center;"}
 *Bay Area Alternatives*
 {: refdef}
