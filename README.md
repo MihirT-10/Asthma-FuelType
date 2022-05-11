@@ -2,7 +2,7 @@
 
 By Mihir Thakar
 
-The objective of this project is to explore a possible correlation between Vehicle and Health data from 9 counties that make up the Bay Area. I obtained an "Asthma Deaths by County" and a "Vehicle Fuel Type by Zip Code" dataset from the CA.gov open data portal. The primary task was to clean the zipcoded data into an organized data frame as each county is host to multiple zip codes. From there I will be able to connect whether the fuel type (Hybrid, Elec, Gas) has an affect on the number of Asthma deaths and create a visualization based on K-Means Clustering. The final results were then geocoded into chloropleth maps. You can follow my work pipeline below.
+The objective of this project was to explore a possible correlation between Vehicle Fuel Types and Asthma among the 9 counties that make up the Bay Area. The data sources included an "Asthma Deaths by County" and a "Vehicle Fuel Type by Zip Code" csv files from the CA.gov open data portal. For the first step to clean the zipcoded data I had to create an organized data frame as each county is host to multiple zip codes. Once created I had to distinguish whether the fuel type (Hybrid, Elec, Gas) had an affect on the number of Asthma deaths and create a visualization based on K-Means Clustering. The final results were then geocoded into chloropleth maps. You can follow my work pipeline below.
 
 
 ## Cleansed Data
@@ -134,14 +134,26 @@ the manufacturing of combustion fuel vehicles in 2025.
 The following provides a visualization on the Death Percentage by Asthma for the Bay Area by County
 
 <iframe src="Maps/DP.html" height="500" width="800"></iframe>
+{:style="display:block; margin-left:auto; margin-right:auto"; :height="75%" width="75%"; }
+{:refdef: style="text-align: center;"}
+*Bay Area Death Percentage*
+{: refdef}
 
 ### Alternative Fuel/Combustion Fuel
 The following provides a visualization on the ratio between Alternative Fuel Vehicles over Combustion for the Bay Area by County
 
 <iframe src="Maps/AC.html" height="500" width="800"></iframe>
+{:style="display:block; margin-left:auto; margin-right:auto"; :height="75%" width="75%"; }
+{:refdef: style="text-align: center;"}
+*Bay Area Alternative Fuel Ratio Relationship*
+{: refdef}
 
 ### Number Alternative Fuel Vehicles
 The following provides a visualization on the number of Alternative Fuel Vehicles for the Bay Area by County
 (Note how Santa Clara has the greatest value this can be attributed to its suburban high income environment)
 
 <iframe src="Maps/AV.html" height="500" width="800"></iframe>
+{:style="display:block; margin-left:auto; margin-right:auto"; :height="75%" width="75%"; }
+{:refdef: style="text-align: center;"}
+*Bay Area Alternatives*
+{: refdef}
