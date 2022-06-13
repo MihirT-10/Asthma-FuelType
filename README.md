@@ -2,7 +2,7 @@
 
 By Mihir Thakar
 
-This Project is going to correlate Vehicle and Health data from 9 counties that make up the Bay Area. I obtained an "Asthma Deaths by County" and "Vehicle Fuel Type by Zip Code" dataset from the CA.gov open data portal. The most important task will involve organizing the zipcoded data into an organized data frame as each county is host to multiple zip codes. From there I will be able to connect whether the fuel type (Hybrid, Elec, Gas) has an affect on the presence of Asthma deaths and create a visualization based on most K-Means Clustering. The final results are then geocoded into chloropleth maps. You can follow my work pipeline below.
+The objective of this project was to explore a possible correlation between Vehicle Fuel Types and Asthma among the 9 counties that make up the Bay Area. The data sources included an "Asthma Deaths by County" and a "Vehicle Fuel Type by Zip Code" csv files from the CA.gov open data portal. For the first step to clean the zipcoded data I had to create an organized data frame as each county is host to multiple zip codes. Once created I had to distinguish whether the fuel type (Hybrid, Elec, Gas) had an affect on the number of Asthma deaths and create a visualization based on K-Means Clustering. The final results were then geocoded into chloropleth maps. You can follow my work pipeline below.
 
 
 ## Cleansed Data
@@ -58,7 +58,7 @@ I then used a groupby method to find the number of Deaths in each county
   - Alternative = Battery Electric, Plug-In Hybrid, Hydrogen Fuel Cell
   - ```python
     def CarTypeCounter(df):
-      VehTypeCounts = df.groupby(['CountyZipped,'Fuel Type']).Vehicles.sum().reset_index()
+      VehTypeCounts = df.groupby(['CountyZipped','Fuel Type']).Vehicles.sum().reset_index()
       VehicleCounts = VehTypeCounts['Vehicle'].to_numpy()
       Alts = VehicleCounts[::2]
       Combs = VehicleCounts[1::2]
@@ -89,6 +89,15 @@ This is a Matrix of scatterplots meant to display correlations between attribute
 {:refdef: style="text-align: center;"}
 *Pair Wise Plots*
 {: refdef}
+
+### K-Means Overview
+
+<img src="Images/Cluster Slide.png" alt="Image description">
+{:style="display:block; margin-left:auto; margin-right:auto"; :height="75%" width="75%"; }
+{:refdef: style="text-align: center;"}
+*K-Means Explanation*
+{: refdef}
+
 
 ### K-Means Analysis 9 Clusters
 After designing the Final Frame I conducted a K-Means Clustering Analysis using 9 clusters for the 9 Counties.
@@ -125,14 +134,20 @@ the manufacturing of combustion fuel vehicles in 2025.
 The following provides a visualization on the Death Percentage by Asthma for the Bay Area by County
 
 <iframe src="Maps/DP.html" height="500" width="800"></iframe>
+*Bay Area Death Percentage*
+{: refdef}
 
 ### Alternative Fuel/Combustion Fuel
 The following provides a visualization on the ratio between Alternative Fuel Vehicles over Combustion for the Bay Area by County
 
 <iframe src="Maps/AC.html" height="500" width="800"></iframe>
+*Bay Area Alternative Fuel Ratio Relationship*
+{: refdef}
 
 ### Number Alternative Fuel Vehicles
 The following provides a visualization on the number of Alternative Fuel Vehicles for the Bay Area by County
 (Note how Santa Clara has the greatest value this can be attributed to its suburban high income environment)
 
 <iframe src="Maps/AV.html" height="500" width="800"></iframe>
+*Bay Area Alternatives*
+{: refdef}
